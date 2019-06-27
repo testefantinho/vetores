@@ -43,4 +43,15 @@ printf("Tamanho : %zu",vetor); // Tamanho : 40
 ## Vetores e Referencias
 
 * Os vetores sempre são passados por **Referência** 
-* Chamamos o vetor em
+* Podemos chamar o Vetor em uma Função externa como abaixo:
+
+```c
+void funcao(char* vetor){
+    ...
+}
+
+int main(){
+    char* vetor = "teste";
+    funcao(vetor);
+}
+```
