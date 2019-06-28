@@ -40,7 +40,7 @@ printf("Tamanho : %zu",vetor); // Tamanho : 40
 ```
 
 
-## Vetores e Referencias
+## VETORES E REFERENCIA
 
 * Os vetores sempre são passados por **Referência** 
 * Podemos chamar o Vetor em uma Função externa como abaixo:
@@ -55,3 +55,30 @@ int main(){
     funcao(vetor);
 }
 ```
+
+## LENDO VALORES DO VETOR
+
+* Usamos a aritmética de ponteiros para poder ler os valores de um vetor
+
+* Podemos declarar um ponteiro para podermos mexer no vetor criado
+
+```c
+char c[3] = {'a','b','c','d'};
+
+char* p = c; //criamos um ponteiro para o vetor, que ja é um ponteiro
+
+printf("%c\n", *p); //imprime primeiro valor do vetor
+
+```
+
+* A aritmética dos Ponteiros nos permite acessar outros elementos do vetor, porque cada adição no ponteiro é outra posição do vetor
+
+```c
+char c[3] = {'a','b','c'};
+
+printf("%c", *p); //primeira posição do vetor
+printf("%c", *(p+1)); //segunda posição do vetor
+printf("%c", *(p+2)); //terceira posição do vetor
+
+```
+
