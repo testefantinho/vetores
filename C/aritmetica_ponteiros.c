@@ -6,6 +6,8 @@
 
 int main(){
     char c[6] = {'1','2','3','4','5','6'};
+    int vet[3] = {1,2,3};
+    int* ptr = vet;
 
     // TESTANDO COM FOR
     printf("TESTANDO COM O FOR \n\n");
@@ -21,4 +23,10 @@ int main(){
     printf("Pos[%d] : %c\n",3, *(c+3));
     printf("Pos[%d] : %c\n",4, *(c+4));
     printf("Pos[%d] : %c\n",5, *(c+5));
+
+    //TESTE DE SAIDA 
+    printf("Teste de Saida: \n\n");
+    printf("%d\n",*ptr++);  
+    printf("%d\n",(*ptr)++);
+
 }
